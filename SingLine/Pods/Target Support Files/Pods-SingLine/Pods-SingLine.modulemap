@@ -1,0 +1,6 @@
+framework module Pods_SingLine {
+  umbrella header "Pods-SingLine-umbrella.h"
+
+  export *
+  module * { export * }
+}

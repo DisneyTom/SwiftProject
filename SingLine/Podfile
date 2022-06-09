@@ -1,0 +1,26 @@
+# Uncomment the next line to define a global platform for your project
+
+platform :ios, '12.0'
+
+source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
+
+target 'SingLine' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  #1. 网络请求
+  pod 'Alamofire'
+  #2. AutoLayout布局
+  pod 'SnapKit', '~> 5.6.0'
+  #3. 下载、缓存网络图片
+  pod 'Kingfisher'
+  #4. 解析数据
+  pod 'SwiftyJSON', '~> 5.0.1'
+  #5. 对请求库Alamofire的抽象封装 相当于YTKNetwork和AFNetworking的关系
+  pod 'Moya'
+  #6.设备的信息适配
+  pod 'DeviceKit'
+  #7.声网SDK
+  #pod 'LeanCloud'
+
+end
